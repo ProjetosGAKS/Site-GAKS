@@ -1,0 +1,348 @@
+body{
+    background-color: #ffffff;
+}
+li{
+    font-family: Microsoft Sans Serif;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    width: 100%;
+    height: 10dvh; /* Altura da barra */
+    background-color: #baa88d;
+    border-radius: 2dvh;
+
+}
+#logo{
+    position: absolute;
+    width: 5.5dvh; /* Ajuste o tamanho conforme necessário */
+    height: 5.5dvh;
+    left: 5dvh; /* Posicione o logo à esquerda */
+    z-index: 1; /* Coloque o logo em uma camada inferior */
+}
+#logo_a{
+    margin-bottom: 6dvh;
+}
+/* Estilo para o título */
+.nav h1{
+    font-family: Microsoft Sans Serif;
+    position: absolute;
+    z-index: 2; /* Garanta que o h1 fique acima do logo */
+    color: #524d48; /* Cor do texto */
+    font-size: 4dvh; /* Ajuste o tamanho da fonte */
+    margin: 0;
+    margin-left: 10dvh;
+    text-align: left;
+}
+.esquerda{
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    width: 70%;
+    height: 75dvh; /* Altura da barra */
+    background-color: #ebe4dd;
+    border-radius: 2dvh;
+    margin-top: 5px;
+}
+.direita{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 75dvh; /* Altura da barra */
+    background-color: #ebe4dd;
+    border-radius: 2dvh;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#foto{
+    width: 30dvh;
+    border-radius: 40%;
+    margin-bottom: 20dvh;
+}
+.centrao{
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+}
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12dvh; /* Altura da barra */
+    background-color: #baa88d;
+    border-radius: 2dvh;
+    margin-top: 5px;
+}
+footer {
+	clear: both;
+	text-align: center;
+    color: #524d48;
+}
+
+footer>p a {
+	padding: 2px, 10px;
+}
+a {
+    font-size: 2dvh;
+    font-family: Microsoft Sans Serif;
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor definida no h1 */
+}
+a:hover {
+	color: #ffffff;
+}
+.menu-hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    margin-left: auto; /* Empurra o menu hambúrguer para a direita */
+    margin-right: 20px; /* Espaçamento da borda direita */
+}
+.menu-hamburger span {
+    background-color: #ebe4dd;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Links do menu */
+.menu-links {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background-color: #baa88d;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+.menu-links li {
+    margin: 10px 0;
+}
+.menu-links a {
+    text-decoration: none;
+    color: #524d48;
+    font-size: 16px;
+}
+
+/* Exibe o menu no modo ativo */
+.menu-links.active {
+    display: flex;
+}
+
+/* Animação no ícone hambúrguer */
+.menu-hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}.texto {
+    position: absolute;
+    opacity: 0;
+    font-size: 3dvh;
+    transition: opacity 1s ease-in-out;
+    margin-top: 50dvh;
+}
+.esquerda_p1{
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    width: 25%;
+    height: 25%; /* Altura da barra */
+    margin-left: 7dvh;
+}
+.esquerda_p2{
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    width: 25%;
+    height: 25%; /* Altura da barra */
+
+}
+.esquerda_p3{
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    width: 25%;
+    height: 25%; /* Altura da barra */
+}
+.esquerda_p4{
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    width: 25%;
+    height: 25%; /* Altura da barra */
+
+}
+#foto_p1{
+    width: 30dvh;
+    height: auto;
+}
+#foto_p2{
+    width: 30dvh;
+    height: auto;
+}
+#foto_p3{
+    width: 30dvh;
+    height: auto;
+}
+#foto_p4{
+    width: 25dvh;
+    height: auto;
+}
+/*MAPA INTERATIVO*/
+.esquerda_mapa{ 
+    
+    font-size: 5dvh;
+    margin-bottom: 5dvh;
+    margin-left: 2dvh;
+
+}.direita_mapa{
+    
+    margin-bottom:50dvh;
+    margin-left: 2dvh;
+    margin-top: 50dvh;
+    margin-right: 2dvh;
+}
+/* CONTROLE DE ACESSO*/
+.esquerda_controle_de_acesso{
+    
+    font-size: 5dvh;
+    margin-bottom: 5dvh;
+    margin-left: 2dvh;
+
+}
+.direita_controle_de_acesso{
+    
+    font-size: 8dvh; 
+    margin-bottom:50dvh;
+    margin-left: 1dvh;
+    margin-top: 50dvh;
+}
+#karines{
+    margin-left: 1dvh;
+    width: 45dvh;
+    right: auto;
+    border-radius: 10px;
+    margin-right: 2dvh;
+}
+#biels{
+    margin-left: 1dvh;
+    width:45dvh; 
+    height:35dvh; 
+    border-radius: 10px;
+    margin-right: 2dvh;
+}
+/*ESTAÇÃO METEREOLÓGICA*/
+.esquerda_estacao_metereologica{ 
+    
+    font-size: 5dvh;
+    margin-bottom: 5dvh;
+    margin-left: 2dvh;
+
+
+}.direita_estacao_metereologica{
+    
+    font-size: 8dvh; 
+    margin-bottom:50dvh;
+    margin-left: 1dvh;
+    margin-top: 50dvh;
+
+}.esquerda_home{ 
+    
+    font-size: 5dvh;
+    margin-bottom: 60dvh;
+    margin-left: 5dvh;
+    border-image-width: 20dvh;
+
+}
+#img_estacao1{
+    margin-left: 1dvh;
+    width: 50dvh;
+    right: auto;
+    border-radius: 10px;
+    margin-right: 1dvh;
+}
+#img_estacao2{
+    width: 51.5dvh;
+    right: auto;
+    border-radius: 10px;
+    margin-right: 1dvh;
+}
+/*Agrupamento discreto*/
+#foto_agr{
+    width: 50dvh;
+    border-radius: 20px;
+}
+.p_agr{
+    text-align: justify; /* Justifica o texto */
+    text-indent: 1dvh; /* Indenta o início de cada parágrafo (opcional) */
+    width: 70dvh;
+    margin-left: 40dvh;
+    font-size: 3.5dvh;
+}
+
+/*MAPA INTERATIVO*/
+.esquerda_mapa{ 
+    
+    font-size: 5dvh;
+    margin-bottom: 5dvh;
+    margin-left: 2dvh;
+
+}.direita_mapa{
+    
+    width: 60dvh;
+    right: auto;
+    border-radius: 10px;
+}
+/* CONTROLE DE ACESSO*/
+.esquerda_controle_de_acesso{
+    
+    font-size: 5dvh;
+    margin-bottom: 5dvh;
+    margin-left: 2dvh;
+
+}
+.direita_controle_de_acesso_video{
+    
+    font-size: 8dvh; 
+    margin-bottom:-1dvh;
+    margin-left: 5.4dvh;
+    margin-top: 1dvh;
+    
+/*ESTAÇÃO METEREOLÓGICA*/
+}.esquerda_estacao_metereologica{ 
+    
+    font-size: 5dvh;
+    margin-bottom: 5dvh;
+    margin-left: 2dvh;
+
+
+}.direita_estacao_metereologica{
+    
+    font-size: 8dvh; 
+    margin-bottom:50dvh;
+    margin-left: 3dvh;
+    margin-top: 50dvh;
+
+}.esquerda_home{ 
+    
+    font-size: 5dvh;
+    margin-bottom: 60dvh;
+    margin-left: 5dvh;
+    border-image-width: 20dvh;
+
+}
